@@ -33,6 +33,13 @@ select {
     letter-spacing: -0.075em;
     z-index: 10;
     background-color: #000;
+    position: fixed;
+    left: 50%;
+    top: 0vw;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    transform: translateX(-50%);
   }
   .container .wrap header .h-inner {
     color: #fff;
@@ -87,7 +94,10 @@ select {
   .container .wrap header .h-inner ul li.on a {
     color: #faa21b;
   }
-  .container .wrap section h2 {
+  .container .wrap article {
+    margin-top: 18.93333333vw;
+  }
+  .container .wrap article section h2 {
     font-size: 4.53333333vw;
     letter-spacing: -0.05em;
     color: #fff;
@@ -95,7 +105,7 @@ select {
     font-weight: 700;
     position: relative;
   }
-  .container .wrap section h2:after {
+  .container .wrap article section h2:after {
     content: '';
     display: block;
     position: absolute;
@@ -108,7 +118,7 @@ select {
     height: 0.26666667vw;
     background-color: #fff;
   }
-  .container .wrap section .btn {
+  .container .wrap article section .btn {
     font-size: 3.73333333vw;
     font-weight: 700;
     text-align: center;
@@ -120,7 +130,7 @@ select {
     display: inline-block;
     letter-spacing: -0.05em;
   }
-  .container .wrap section .btn img {
+  .container .wrap article section .btn img {
     width: 3.46666667vw;
     height: 3.33333333vw;
     display: inline-block;
@@ -203,7 +213,7 @@ select {
     text-align: left;
     background-repeat: no-repeat;
     background-image: url('../img/mo/regi-bg.png');
-    background-size: contain;
+    background-size: cover;
   }
   .container.reg .wrap article section.visu h2 {
     font-size: 5.6vw;
@@ -433,6 +443,9 @@ select {
     height: 8.53333333vw;
     line-height: 8.53333333vw;
   }
+  .container.main .wrap article {
+    background-color: #000;
+  }
   .container.main .wrap article section .tit {
     font-size: 3.06666667vw;
     margin-top: 8vw;
@@ -454,7 +467,7 @@ select {
     text-align: left;
   }
   .container.main .wrap article .visual h2 {
-    font-size: 11.06666667vw;
+    font-size: 7.06666667vw;
     line-height: 13.33333333vw;
   }
   .container.main .wrap article .visual h2:after {
@@ -548,13 +561,13 @@ select {
     box-sizing: border-box;
   }
   .container.main .wrap article .attend .btn {
-    margin-top: 6.66666667vw;
+    margin-top: 13.33333333vw;
     margin-right: 0vw;
-    margin-bottom: 31.33333333vw;
+    margin-bottom: 13.33333333vw;
     margin-left: 0vw;
   }
   .container.main .wrap article .attend .info {
-    margin-top: 16.66666667vw;
+    margin-top: 13.33333333vw;
     text-align: left;
     padding-left: 20vw;
     box-sizing: border-box;

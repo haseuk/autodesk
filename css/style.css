@@ -40,6 +40,14 @@ select {
     z-index: 10;
     margin-left: auto;
     margin-right: auto;
+    position: fixed;
+    left: 50%;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    transform: translateX(-50%);
+    background-color: #000;
   }
   .container .wrap header .h-inner {
     width: 68.88888889rem;
@@ -106,14 +114,17 @@ select {
   .container .wrap header .h-inner ul li.on a {
     color: #faa21b;
   }
-  .container .wrap section h2 {
+  .container .wrap article {
+    margin-top: 3.33333333rem;
+  }
+  .container .wrap article section h2 {
     font-size: 1.66666667rem;
     letter-spacing: -0.05em;
     color: #fff;
     display: inline-block;
     position: relative;
   }
-  .container .wrap section h2:after {
+  .container .wrap article section h2:after {
     content: '';
     display: block;
     position: absolute;
@@ -126,7 +137,7 @@ select {
     height: 0.11111111rem;
     background-color: #fff;
   }
-  .container .wrap section .btn {
+  .container .wrap article section .btn {
     font-size: 1.11111111rem;
     font-weight: 700;
     text-align: center;
@@ -137,7 +148,7 @@ select {
     height: 3.44444444rem;
     display: inline-block;
   }
-  .container .wrap section .btn img {
+  .container .wrap article section .btn img {
     width: 1.11111111rem;
     height: 1.05555556rem;
     display: inline-block;
@@ -223,16 +234,26 @@ select {
     border-bottom: 1px solid #000;
   }
   .container.reg {
+    position: relative;
+  }
+  .container.reg:after {
+    content: '';
+    display: block;
     background: url("../img/pc/regi-bg.png") no-repeat center center;
     background-size: cover;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    right: auto;
+    bottom: auto;
+    width: 100vw;
     height: 19.66666667rem;
-    overflow: unset;
   }
   .container.reg .wrap header:after {
     content: '';
     display: block;
     background-color: #000;
-    opacity: 0.85;
+    opacity: 1;
     position: absolute;
     left: 50%;
     top: 0rem;
@@ -275,9 +296,6 @@ select {
     margin-left: auto;
     margin-right: auto;
   }
-  .container.reg .wrap article section.reg-cont h2 {
-    font-weight: 700;
-  }
   .container.reg .wrap article section.reg-cont .tit {
     font-size: 1.11111111rem;
     color: #fff;
@@ -286,6 +304,7 @@ select {
   .container.reg .wrap article section.reg-cont .input-wrap {
     margin-top: 2.22222222rem;
     text-align: left;
+    position: relative;
   }
   .container.reg .wrap article section.reg-cont .input-wrap .input {
     margin-bottom: 1.11111111rem;
@@ -372,6 +391,9 @@ select {
   .container.reg .wrap article section.reg-cont .input-wrap .input.tel input[type=number] {
     -moz-appearance: textfield;
   }
+  .container.reg .wrap article section.reg-cont .input-wrap .input.email {
+    margin-bottom: 0.55555556rem;
+  }
   .container.reg .wrap article section.reg-cont .input-wrap .input.email .p1 {
     width: 30.72222222rem;
   }
@@ -398,12 +420,25 @@ select {
   .container.reg .wrap article section.reg-cont .input-wrap .input.email .select select {
     width: 10rem;
   }
+  .container.reg .wrap article section.reg-cont .input-wrap .input.email + span {
+    font-size: 0.88888889rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: -1.66666667rem;
+    right: auto;
+    top: auto;
+    margin-left: -23.77777778rem;
+  }
   .container.reg .wrap article section.reg-cont .privacy {
     width: 68.55555556rem;
     text-align: left;
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+  .container.reg .wrap article section.reg-cont .privacy .tit {
+    margin-top: 5.55555556rem;
   }
   .container.reg .wrap article section.reg-cont .privacy .cont {
     font-size: 0.88888889rem;
@@ -465,7 +500,7 @@ select {
   }
   .container.reg .wrap article section.reg-cont label s {
     font-size: 0.77777778rem;
-    color: #666;
+    color: #fff;
     margin-left: 0.83333333rem;
     display: inline-block;
     vertical-align: middle;
@@ -491,7 +526,7 @@ select {
     content: '';
     display: block;
     background-color: #000;
-    opacity: 0.85;
+    opacity: 1;
     position: absolute;
     left: 50%;
     top: 0rem;
@@ -501,10 +536,6 @@ select {
     width: 100vw;
     height: 3.33333333rem;
     z-index: -1;
-  }
-  .container.main .wrap section {
-    padding-top: 6.94444444rem;
-    box-sizing: border-box;
   }
   .container.main .wrap section h2 {
     font-size: 1.66666667rem;
@@ -517,7 +548,8 @@ select {
     margin-bottom: 1.66666667rem;
   }
   .container.main .wrap article {
-    margin-top: -4.44444444rem;
+    margin-top: 0rem;
+    background-color: #000;
   }
   .container.main .wrap article .visual {
     position: relative;
@@ -530,7 +562,7 @@ select {
     font-weight: 700;
     position: absolute;
     left: 50%;
-    top: 10.55555556rem;
+    top: 13.33333333rem;
     right: auto;
     bottom: auto;
     margin-left: -34.44444444rem;
@@ -545,7 +577,7 @@ select {
     color: #faa21b;
     position: absolute;
     left: 50%;
-    top: 17.5rem;
+    top: 20.27777778rem;
     right: auto;
     bottom: auto;
     margin-left: -34.44444444rem;
@@ -557,7 +589,7 @@ select {
     color: #fff;
     position: absolute;
     left: 50%;
-    top: 23.05555556rem;
+    top: 25.83333333rem;
     right: auto;
     bottom: auto;
     margin-left: -34.44444444rem;
@@ -578,6 +610,8 @@ select {
     background: url("../img/pc/main-bg2.png") no-repeat center center;
     background-size: cover;
     height: 59.94444444rem;
+    padding-top: 7.22222222rem;
+    box-sizing: border-box;
   }
   .container.main .wrap article .introduce .noti {
     font-size: 1.11111111rem;
@@ -642,23 +676,27 @@ select {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 12.22222222rem;
+    padding-top: 7.22222222rem;
   }
   .container.main .wrap article .attend .btn {
     margin-top: 2.22222222rem;
     height: 3.55555556rem;
     line-height: 3.55555556rem;
-    margin-bottom: 11.66666667rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
   .container.main .wrap article .attend .info {
-    width: 34.44444444rem;
-    padding-left: 4.27777778rem;
+    width: 33.33333333rem;
+    padding-left: 3.88888889rem;
     box-sizing: border-box;
     text-align: left;
     vertical-align: top;
     display: inline-block;
+    margin-top: 3.88888889rem;
+    margin-right: 0rem;
+    margin-bottom: 3.88888889rem;
+    margin-left: 0rem;
   }
   .container.main .wrap article .attend .info .tit {
     font-size: 1.22222222rem;
@@ -737,18 +775,22 @@ select {
   .container.main .wrap footer div + div {
     margin-left: 2.5rem;
   }
+  .container.main .wrap footer div + div p {
+    margin-top: -0.27777778rem;
+  }
   .container.media {
     background: url("../img/pc/media-bg.png") no-repeat center center;
     background-size: cover;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    min-height: 53.33333333rem;
   }
   .container.media .wrap header:after {
     content: '';
     display: block;
     background-color: #000;
-    opacity: 0.85;
+    opacity: 1;
     position: absolute;
     left: 50%;
     top: 0rem;
