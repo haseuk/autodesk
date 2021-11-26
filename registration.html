@@ -50,8 +50,8 @@
                 <option value="010">011</option>
               </select>
             </div>
-            <input type="number" placeholder="1234">
-            <input type="number" placeholder="5678">
+            <input type="number" maxlength="4" oninput="maxLeng(this)" placeholder="1234">
+            <input type="number" maxlength="4" oninput="maxLeng(this)" placeholder="5678">
           </div>
           <div class="input email">
             <p>이 메 일</p>
@@ -111,5 +111,12 @@
     </article>
   </div>
 </div>
+<script>
+  function maxLeng(obj) {
+    if(obj.value.length > obj.maxLength) {
+      obj.value = obj.value.slice(0, obj.maxLength);
+    }
+  }
+</script>
 </body>
 </html>

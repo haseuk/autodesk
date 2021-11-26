@@ -362,6 +362,12 @@ select {
   .container.reg .wrap article section.reg-cont .input-wrap .input.email .select select {
     width: 24vw;
   }
+  .container.reg .wrap article section.reg-cont .input-wrap .input.email + span {
+    font-size: 2.66666667vw;
+    color: #fff;
+    margin-top: 1.33333333vw;
+    display: inline-block;
+  }
   .container.reg .wrap article section.reg-cont .privacy {
     width: 92vw;
     text-align: left;
