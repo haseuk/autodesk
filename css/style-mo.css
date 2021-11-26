@@ -367,6 +367,9 @@ select {
     color: #fff;
     margin-top: 1.33333333vw;
     display: inline-block;
+    width: 66.66666667vw;
+    margin-left: 25.33333333vw;
+    box-sizing: border-box;
   }
   .container.reg .wrap article section.reg-cont .privacy {
     width: 92vw;
@@ -433,7 +436,7 @@ select {
   }
   .container.reg .wrap article section.reg-cont label s {
     font-size: 3.2vw;
-    color: #666;
+    color: #fff;
     margin-left: 2vw;
     display: inline-block;
     vertical-align: middle;
@@ -567,13 +570,10 @@ select {
     box-sizing: border-box;
   }
   .container.main .wrap article .attend .btn {
-    margin-top: 13.33333333vw;
-    margin-right: 0vw;
-    margin-bottom: 13.33333333vw;
-    margin-left: 0vw;
+    margin-top: 17.33333333vw;
   }
   .container.main .wrap article .attend .info {
-    margin-top: 13.33333333vw;
+    margin-top: 17.33333333vw;
     text-align: left;
     padding-left: 20vw;
     box-sizing: border-box;
